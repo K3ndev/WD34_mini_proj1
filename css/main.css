@@ -1,0 +1,14 @@
+/* bootstrap */
+@import url("./vendor/bootstrap/css/bootstrap.css");
+
+/* layout */
+@import url("./layout/root.css");
+
+/* components */
+@import url("./components/header.css");
+
+/* pages */
+@import url("./page/home.css");
+@import url("./page/shop.css");
+@import url("./page/cart.css");
+@import url("./page/contact.css");
