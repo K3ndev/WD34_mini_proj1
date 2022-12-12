@@ -1,6 +1,9 @@
 /* bootstrap */
 @import url("./vendor/bootstrap/css/bootstrap.css");
 
+/* reset */
+@import url("./base/reset.css");
+
 /* layout */
 @import url("./layout/root.css");
 
