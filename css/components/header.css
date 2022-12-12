@@ -1,1 +1,6 @@
-
+.nav-container {
+  width: 100%;
+  max-width: 1636px;
+  /* common resolution 1920×1080 */
+  margin: 0 auto;
+}

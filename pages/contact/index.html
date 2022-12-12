@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
-    <title>Deja Book | Shop</title>
+    <title>Deja Book | contact</title>
     <!-- breakpoint [default - md - lg] -->
     <!-- always put commends for readability -->
     <!-- Don't repeat yourself pattern -->
@@ -24,18 +24,91 @@
     <!-- all img/video should be format into webp except with the logo itself, upload in the ./public folder -->
   </head>
   <body class="layout-flex">
-    <!-- sample code bootstrap and bootstrap-icons -->
-    <header class="bg-primary">
-      header
-      <i class="bi bi-0-circle"></i>
-    </header>
-    <!-- <header class="">header</header> -->
+    <header class="w-100">
+      <nav
+        class="nav-container d-flex align-items-center justify-content-between p-4"
+      >
+        <!-- logo md -->
+        <h1 class="d-none d-md-block">
+          <a href="../../index.html" class="text-decoration-none text-dark"
+            >Deja Book</a
+          >
+        </h1>
 
-    <main class="layout-flex-1">main</main>
+        <!-- menu md-->
+        <ul class="d-none d-md-flex ms-md-5 list-style-none gap-5">
+          <li>
+            <a href="../shop/index.html" class="text-decoration-none text-dark"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="../news/index.html" class="text-decoration-none text-dark"
+              >News</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-dark">Contact</a>
+          </li>
+        </ul>
+
+        <!-- menu sm-->
+        <div
+          class="d-md-none cursor-pointer noselect"
+          id="hamburger"
+          onclick="toggleHamburger()"
+        >
+          &#9776;
+        </div>
+
+        <!-- logo sm -->
+        <h1 class="d-md-none">Deja Book</h1>
+
+        <ul class="d-flex list-style-none">
+          <!-- <li>
+            Search
+            <i class="bi bi-search ms-1"></i>
+          </li> -->
+          <li>
+            Cart
+            <i class="bi bi-bag ms-1"></i>
+          </li>
+          <li class="ms-3 ms-md-4">
+            Account
+            <i class="bi bi-person ms-1"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- menu sm -->
+      <div
+        class="d-none d-md-none p-4 border-y-solid-1 position-absolute z-3 start-0 end-0 bg-danger"
+        id="menu-sm"
+      >
+        <ul class="list-style-none">
+          <li>
+            <a href="../shop/index.html" class="text-decoration-none text-dark"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="../news/index.html" class="text-decoration-none text-dark"
+              >News</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-dark">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="layout-flex-1">contact</main>
 
     <footer>footer</footer>
 
     <!-- bootstrap -->
     <script src="../../css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../../home.js"></script>
   </body>
 </html>

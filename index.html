@@ -26,24 +26,34 @@
   </head>
   <body class="layout-flex">
     <header class="w-100">
-      <nav class="w-100 d-flex align-items-center justify-content-between">
+      <nav
+        class="nav-container d-flex align-items-center justify-content-between p-4"
+      >
         <!-- logo md -->
-        <h1 class="d-none d-md-block">Deja Book</h1>
+        <h1 class="d-none d-md-block">
+          <a href="#" class="text-decoration-none text-dark">Deja Book</a>
+        </h1>
 
         <!-- menu md-->
-        <ul class="d-none d-md-flex ms-md-4 list-style-none">
+        <ul class="d-none d-md-flex ms-md-5 list-style-none gap-5">
           <li>
-            <a href="./pages/shop/index.html" class="text-decoration-none"
+            <a
+              href="./pages/shop/index.html"
+              class="text-decoration-none text-dark"
               >Shop</a
             >
           </li>
           <li>
-            <a href="./pages/news/index.html" class="text-decoration-none"
+            <a
+              href="./pages/news/index.html"
+              class="text-decoration-none text-dark"
               >News</a
             >
           </li>
           <li>
-            <a href="./pages/contact/index.html" class="text-decoration-none"
+            <a
+              href="./pages/contact/index.html"
+              class="text-decoration-none text-dark"
               >Contact</a
             >
           </li>
@@ -51,7 +61,7 @@
 
         <!-- menu sm-->
         <div
-          class="d-md-none cursor-pointer"
+          class="d-md-none cursor-pointer noselect"
           id="hamburger"
           onclick="toggleHamburger()"
         >
@@ -62,36 +72,45 @@
         <h1 class="d-md-none">Deja Book</h1>
 
         <ul class="d-flex list-style-none">
-          <li>
+          <!-- <li>
             Search
-            <i class="bi bi-search"></i>
-          </li>
+            <i class="bi bi-search ms-1"></i>
+          </li> -->
           <li>
             Cart
-            <i class="bi bi-bag"></i>
+            <i class="bi bi-bag ms-1"></i>
           </li>
-          <li>
+          <li class="ms-3 ms-md-4">
             Account
-            <i class="bi bi-person"></i>
+            <i class="bi bi-person ms-1"></i>
           </li>
         </ul>
       </nav>
 
       <!-- menu sm -->
-      <div class="d-none d-md-none" id="menu-sm">
+      <div
+        class="d-none d-md-none p-4 border-y-solid-1 position-absolute z-3 start-0 end-0 bg-danger"
+        id="menu-sm"
+      >
         <ul class="list-style-none">
           <li>
-            <a href="./pages/shop/index.html" class="text-decoration-none"
+            <a
+              href="./pages/shop/index.html"
+              class="text-decoration-none text-dark"
               >Shop</a
             >
           </li>
           <li>
-            <a href="./pages/news/index.html" class="text-decoration-none"
+            <a
+              href="./pages/news/index.html"
+              class="text-decoration-none text-dark"
               >News</a
             >
           </li>
           <li>
-            <a href="./pages/contact/index.html" class="text-decoration-none"
+            <a
+              href="./pages/contact/index.html"
+              class="text-decoration-none text-dark"
               >Contact</a
             >
           </li>
@@ -100,7 +119,7 @@
     </header>
     <main class="layout-flex-1">
       <section aria-label="hero">
-        main
+        home
         <div aria-label="company_information"></div>
         <div aria-label="carousel_model"></div>
         <div aria-label="product_information"></div>
@@ -112,6 +131,7 @@
     <!-- <footer>footer</footer> -->
 
     <!-- bootstrap -->
+    <!-- ! i'm getting an error when importing from css folder to root -->
     <script src="./css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./home.js"></script>
   </body>
