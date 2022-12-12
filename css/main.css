@@ -4,6 +4,9 @@
 /* layout */
 @import url("./layout/root.css");
 
+/* utilities */
+@import url("./utilities/root.css");
+
 /* components */
 @import url("./components/header.css");
 

@@ -50,7 +50,13 @@
         </ul>
 
         <!-- menu sm-->
-        <div class="d-md-none">&#9776;</div>
+        <div
+          class="d-md-none cursor-pointer"
+          id="hamburger"
+          onclick="toggleHamburger()"
+        >
+          &#9776;
+        </div>
 
         <!-- logo sm -->
         <h1 class="d-md-none">Deja Book</h1>
@@ -72,16 +78,22 @@
       </nav>
 
       <!-- menu sm -->
-      <div class="d-none list-style-none">
-        <ul class="">
+      <div class="d-none d-md-none" id="menu-sm">
+        <ul class="list-style-none">
           <li>
-            <a href="./pages/shop/index.html">Shop</a>
+            <a href="./pages/shop/index.html" class="text-decoration-none"
+              >Shop</a
+            >
           </li>
           <li>
-            <a href="./pages/news/index.html">News</a>
+            <a href="./pages/news/index.html" class="text-decoration-none"
+              >News</a
+            >
           </li>
           <li>
-            <a href="./pages/contact/index.html">Contact</a>
+            <a href="./pages/contact/index.html" class="text-decoration-none"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
@@ -101,5 +113,6 @@
 
     <!-- bootstrap -->
     <script src="./css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./home.js"></script>
   </body>
 </html>
