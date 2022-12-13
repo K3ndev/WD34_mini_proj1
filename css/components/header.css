@@ -5,17 +5,41 @@
   margin: 0 auto;
 }
 
+.h-7-5vh {
+  height: 7.5vh;
+}
+
+.menu-sm-hide {
+  transform: translateY(-200px);
+}
+.menu-sm-show {
+  transform: translateY(0);
+}
 /* animation */
+/* animation open */
 @keyframes slideInTopStart {
   from {
-    transform: translateY(-100px);
+    transform: translateY(-200px);
   }
   to {
     transform: translate(0);
   }
 }
 .menu-sm-animation-start {
-  animation: slideInTopStart 0.3s ease-in-out;
+  animation: slideInTopStart 0.3s ease;
+}
+
+/* animation close */
+@keyframes slideInTopClose {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+.menu-sm-animation-close {
+  animation: slideInTopClose 0.2s ease-in-out;
 }
 
 /* todo change the nav into X then add another animation to close the menu */

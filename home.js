@@ -12,11 +12,22 @@ const toggleHamburger = () => {
         return str;
       })
       .some((str) => {
-        return str == "d-none";
+        return str === "menu-sm-hide";
       })
   ) {
-    menuSm.classList.remove("d-none");
-  } else menuSm.classList.add("d-none");
+    // reset to show
+    menuSm.classList.remove("menu-sm-hide");
+    menuSm.classList.remove("menu-sm-animation-close");
+
+    menuSm.classList.add("menu-sm-animation-start");
+  } else {
+    // reset to close
+    menuSm.classList.remove("menu-sm-show");
+    menuSm.classList.remove("menu-sm-animation-start");
+
+    menuSm.classList.add("menu-sm-hide");
+    menuSm.classList.add("menu-sm-animation-close");
+  }
 };
 
 // event listener
@@ -25,6 +36,11 @@ window.addEventListener("resize", function () {
   const query = window.matchMedia("(min-width: 768px)");
   //   if the query is > the target width then add 'd-none' in the classList of menuSm
   if (query.matches) {
-    menuSm.classList.add("d-none");
+    // reset to close
+    menuSm.classList.remove("menu-sm-show");
+    menuSm.classList.remove("menu-sm-animation-start");
+
+    menuSm.classList.add("menu-sm-hide");
+    menuSm.classList.add("menu-sm-animation-close");
   }
 });

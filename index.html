@@ -25,12 +25,9 @@
     <!-- key word - maintainability -->
   </head>
   <body class="layout-flex">
-    <header
-      class="w-100 position-relative bg-white d-flex justify-content-center"
-      style="height: 7.5vh"
-    >
+    <header class="w-100 position-fixed bg-white d-flex justify-content-center">
       <nav
-        class="nav-container d-flex align-items-center justify-content-between p-4 position-fixed z-2 bg-white w-100"
+        class="nav-container d-flex align-items-center justify-content-between p-4 position-sticky z-2 bg-white w-100"
       >
         <!-- logo md -->
         <h1 class="d-none d-md-block">
@@ -90,7 +87,7 @@
 
       <!-- menu sm -->
       <div
-        class="d-none d-md-none p-4 border-y-solid-1 position-absolute start-0 end-0 bg-danger menu-sm-animation-start z-1 top-100"
+        class="p-4 border-y-solid-1 position-absolute start-0 end-0 bg-danger z-1 top-100 menu-sm-hide"
         id="menu-sm"
       >
         <ul>
@@ -118,7 +115,7 @@
         </ul>
       </div>
     </header>
-    <main class="layout-flex-1">
+    <main class="layout-flex-1 m-7-5vh">
       <section aria-label="hero" style="height: 1000px">
         home
         <div aria-label="company_information"></div>
@@ -137,3 +134,6 @@
     <script src="./home.js"></script>
   </body>
 </html>
+
+<!-- todo make the main-menu and nav sticky, and the parent should be fixed -->
+<!-- todo make an animation-close the main-menu when nav is open and remove animation-open -->
