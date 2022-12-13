@@ -4,3 +4,18 @@
   /* common resolution 1920×1080 */
   margin: 0 auto;
 }
+
+/* animation */
+@keyframes slideInTopStart {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+.menu-sm-animation-start {
+  animation: slideInTopStart 0.3s ease-in-out;
+}
+
+/* todo change the nav into X then add another animation to close the menu */
