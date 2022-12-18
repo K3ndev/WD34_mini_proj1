@@ -6,12 +6,10 @@
 }
 
 .company-information {
-  background-color: blue;
   height: 100%;
 }
 
 .carousel-model {
-  background-color: aqua;
   height: 100%;
 }
 
@@ -23,48 +21,42 @@
 }
 
 .product-information {
-  background-color: red;
   height: 100%;
 }
 
 .carousel-product {
-  background-color: green;
   height: 100%;
 }
 
 /* xl bootstrap breakpoint */
 @media (min-width: 1200px) {
   .category1 {
-    height: 55%;
+    height: 63%;
     flex-direction: row;
   }
 
   .company-information {
     width: 45%;
-    background-color: blue;
     height: 100%;
   }
 
   .carousel-model {
     width: 55%;
-    background-color: aqua;
     height: 100%;
   }
   .category2 {
-    height: 45%;
+    height: 37%;
     display: flex;
     flex-direction: row;
   }
 
   .product-information {
     width: 55%;
-    background-color: red;
     height: 100%;
   }
 
   .carousel-product {
     width: 45%;
-    background-color: green;
     height: 100%;
   }
 }
