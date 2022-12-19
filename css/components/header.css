@@ -42,4 +42,24 @@
   animation: slideInTopClose 0.2s ease-in-out;
 }
 
+/* link animation when hover */
+.link-animation::before {
+  transition: 300ms;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #523a1d;
+
+  width: 0%;
+  bottom: -4px;
+}
+
+.link-animation:hover::before {
+  width: 100%;
+}
+
+.link-animation:hover {
+  color: #523a1d !important;
+}
+
 /* todo change the nav into X then add another animation to close the menu */
