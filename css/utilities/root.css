@@ -77,6 +77,9 @@
 .mt-7-5vh {
   margin-top: 7.5vh;
 }
+.h-75vh {
+  height: 7.5vh;
+}
 
 /* vertical text */
 .text-vertical {

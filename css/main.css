@@ -10,6 +10,9 @@
 /* utilities */
 @import url("./utilities/root.css");
 
+/* typography */
+@import url("./base/typography.css");
+
 /* components */
 @import url("./components/header.css");
 

@@ -29,12 +29,19 @@
       class="w-100 position-fixed bg-white d-flex justify-content-center z-40"
     >
       <nav
-        class="nav-container d-flex align-items-center justify-content-between p-4 position-sticky z-40 bg-white w-100"
+        class="nav-container d-flex align-items-center justify-content-between p-4 position-sticky z-40 bg-white w-100 h-75vh"
       >
         <!-- logo md -->
-        <h1 class="d-none d-md-block">
-          <a href="#" class="text-decoration-none text-dark">Deja Book</a>
-        </h1>
+        <div class="d-none d-md-block">
+          <a href="#" style="width: 110px" class="d-block">
+            <img
+              src="./public/images/AC30BD9B-2145-4158-9CF2-CBAD28D308ED.png"
+              alt=""
+              style="aspect-ratio: 1 / 1"
+              class="mt-2"
+            />
+          </a>
+        </div>
 
         <!-- menu md-->
         <ul class="d-none d-md-flex ms-md-5 gap-5">
@@ -71,9 +78,15 @@
         </div>
 
         <!-- logo sm -->
-        <h1 class="d-md-none">
-          <a href="#" class="text-decoration-none text-dark">Deja Book</a>
-        </h1>
+        <div class="d-md-none">
+          <a href="#" style="width: 90px" class="d-block">
+            <img
+              src="./public/images/AC30BD9B-2145-4158-9CF2-CBAD28D308ED.png"
+              alt=""
+              style="aspect-ratio: 1 / 1"
+            />
+          </a>
+        </div>
 
         <ul class="d-flex gap-4 gap-md-5">
           <li>
@@ -132,28 +145,30 @@
               <!-- 1 -->
               <div class="">
                 <h2
+                  class="font-playfair"
                   style="
                     font-size: 4.5rem; /* 72px */
                     line-height: 1;
                     color: #906e4e;
                   "
                 >
-                  Lorem,
+                  Captivating,
                 </h2>
                 <h2
+                  class="font-playfair"
                   style="
                     font-size: 4.5rem; /* 72px */
                     line-height: 1;
                     color: #523a1d;
                   "
                 >
-                  ipsum dolor.
+                  inspiring tale.
                 </h2>
                 <p
-                  class="text-vertical position-absolute"
+                  class="text-vertical position-absolute fst-italic"
                   style="right: 2rem; top: 3rem"
                 >
-                  Lorem ipsum dolor sit amet.
+                  A product of the esteemed group six.
                 </p>
               </div>
               <!-- 2 -->
@@ -162,29 +177,17 @@
                 style="bottom: 2rem"
               >
                 <div style="width: 32%">
-                  <!-- <h3>Lorem.</h3> -->
-                  <button class="custom-btn-high custom-radius-lg">
-                    Click me
-                  </button>
-                  <button class="custom-btn-low custom-radius-lg">
-                    Click me
-                  </button>
+                  <h3>Book.</h3>
                   <p class="line-clamp-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Est, in.
+                    Unlock the power of the written word, where every book holds
+                    a unique and unforgettable tale.
                   </p>
                 </div>
                 <div style="width: 32%">
-                  <!-- <h3>Lorem.</h3> -->
-                  <button class="custom-btn-high custom-radius-full">
-                    Click me
-                  </button>
-                  <button class="custom-btn-low custom-radius-full">
-                    Click me
-                  </button>
+                  <h3>About.</h3>
                   <p class="line-clamp-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Est, in.
+                    Get lost in the written word at DejaBook, the go-to source
+                    for all things books.
                   </p>
                 </div>
               </div>
@@ -194,7 +197,7 @@
             <img
               src="./public/images/model1-v2.jpg"
               alt="model2"
-              class="w-100 h-100"
+              class="w-100 h-100 img-hover"
               style="object-fit: cover"
               object-position:
               center;

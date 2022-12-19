@@ -12,6 +12,9 @@
 .carousel-model {
   height: 100%;
 }
+.img-hover:hover {
+  background-color: black;
+}
 
 /* 2 */
 .category2 {
