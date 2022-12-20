@@ -15,6 +15,7 @@
 
 /* components */
 @import url("./components/header.css");
+@import url("./components/button.css");
 
 /* pages */
 @import url("./page/home.css");

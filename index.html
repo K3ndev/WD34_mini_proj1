@@ -89,17 +89,17 @@
         </div>
 
         <ul class="d-flex gap-4 gap-md-5">
-          <li>
+          <li class="position-relative">
             <a
               href="./pages/cart/index.html"
-              class="text-decoration-none text-dark"
+              class="text-decoration-none text-dark link-animation d-block"
               >Cart <i class="bi bi-bag ms-1"></i>
             </a>
           </li>
-          <li>
+          <li class="position-relative">
             <a
               href="./pages/account/index.html"
-              class="text-decoration-none text-dark"
+              class="text-decoration-none text-dark link-animation d-block"
               >Account <i class="bi bi-person ms-1"></i>
             </a>
           </li>
@@ -168,6 +168,7 @@
                   class="text-vertical position-absolute fst-italic"
                   style="right: 2rem; top: 3rem"
                 >
+                  <span class="d-none d-md-inline-block pb-3">----------</span>
                   A product of the esteemed group six.
                 </p>
               </div>
@@ -207,16 +208,53 @@
 
         <!-- 2 -->
         <div class="category2">
-          <div class="product-information bg-neutral-brown">
-            <div class="product-information1">who are we [videos]</div>
-            <div class="product-information2">popular product [list]</div>
+          <!-- 2.1 -->
+          <div class="carousel-product d-flex">
+            <div class="carousel-product1">carousel popular product [img]</div>
+            <div class="carousel-product2">carousel popular product [disc]</div>
           </div>
-          <div class="carousel-product bg-white">
-            <div class="carousel-product1" class="">
-              carousel new product [img]
+
+          <!-- 2.2 -->
+          <div class="product-information d-flex">
+            <div
+              class="product-information1 bg-neutral-brown"
+              style="padding: 2rem"
+            >
+              <div>
+                <h3>Free Shipping</h3>
+                <p>for purchases with a minimum of PHP 999</p>
+              </div>
+              <div>
+                <h3>Fast Delivery</h3>
+                <p>
+                  Get your book within a week! and easily accessible in good
+                  shape in the Philippines.
+                </p>
+              </div>
+              <div>
+                <h3>Authentic Copy</h3>
+                <p>All products are 100% authentic and original copies.</p>
+              </div>
             </div>
-            <div class="carousel-product2" class="">
-              carousel new product [disc]
+            <div
+              class="product-information2 bg-white-paper"
+              style="padding: 2rem"
+            >
+              <h3>New Release</h3>
+              <ul>
+                <li>book tittle1</li>
+                <li>book tittle2</li>
+                <li>book tittle3</li>
+                <li>book tittle4</li>
+                <li>book tittle5</li>
+                <li>book tittle6</li>
+                <li>book tittle7</li>
+                <li>book tittle8</li>
+              </ul>
+
+              <button class="custom-btn-high custom-radius-full">
+                Shop Now
+              </button>
             </div>
           </div>
         </div>
