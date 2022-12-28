@@ -24,109 +24,124 @@
     <!-- all img/video should be format into webp except with the logo itself, upload in the ./public folder -->
   </head>
   <body class="layout-flex">
-    <header
-      class="w-100 position-fixed bg-white d-flex justify-content-center z-40"
-    >
-      <nav
-        class="nav-container d-flex align-items-center justify-content-between p-4 position-sticky z-40 bg-white w-100"
-      >
-        <!-- logo md -->
-        <h1 class="d-none d-md-block">
-          <a href="../../index.html" class="text-decoration-none text-dark"
-            >Deja Book</a
-          >
-        </h1>
-
-        <!-- menu md-->
-        <ul class="d-none d-md-flex ms-md-5 gap-5">
-          <li class="position-relative">
-            <a
-              href="#"
-              class="text-decoration-none text-dark link-animation d-block"
-              >Shop</a
-            >
-          </li>
-          <li class="position-relative">
-            <a
-              href="../news/index.html"
-              class="text-decoration-none text-dark link-animation d-block"
-              >News</a
-            >
-          </li>
-          <li class="position-relative">
-            <a
-              href="../contact/index.html"
-              class="text-decoration-none text-dark link-animation d-block"
-              >Contact</a
-            >
-          </li>
-        </ul>
-
-        <!-- menu sm-->
-        <div
-          class="d-md-none cursor-pointer noselect"
-          id="hamburger"
-          onclick="toggleHamburger()"
+    <!-- nav -->
+    <header style="border-bottom: solid 1px #eae8e7">
+      <!-- announcement -->
+      <div class="bg-black">
+        <p
+          class="text-white text-center py-2"
+          style="
+            font-size: 0.875rem; /* 14px */
+            line-height: 1.25rem; /* 20px */
+          "
         >
-          &#9776;
-        </div>
-
-        <!-- logo sm -->
-        <h1 class="d-md-none">
-          <a href="../../index.html" class="text-decoration-none text-dark"
-            >Deja Book</a
-          >
-        </h1>
-
-        <ul class="d-flex gap-4 gap-md-5">
-          <li>
-            <a href="../cart/index.html" class="text-decoration-none text-dark"
-              >Cart <i class="bi bi-bag ms-1"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="../account/index.html"
-              class="text-decoration-none text-dark"
-              >Account <i class="bi bi-person ms-1"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- menu sm -->
-      <div
-        class="p-4 border-y-solid-1 position-absolute start-0 end-0 bg-white z-20 top-100 menu-sm-hide"
-        id="menu-sm"
-      >
-        <ul>
-          <li>
-            <a href="#" class="text-decoration-none text-dark">Shop</a>
-          </li>
-          <li>
-            <a href="../news/index.html" class="text-decoration-none text-dark"
-              >News</a
-            >
-          </li>
-          <li>
-            <a
-              href="../contact/index.html"
-              class="text-decoration-none text-dark"
-              >Contact</a
-            >
-          </li>
-        </ul>
+          Free Shipping for purchases with a minimum of PHP 999 | WE SHIP ONLY
+          IN THE PHILIPPINES
+        </p>
       </div>
+      <div class="bg-white-paper">
+        <p
+          class="text-black text-center py-2"
+          style="
+            font-size: 0.875rem; /* 14px */
+            line-height: 1.25rem; /* 20px */
+          "
+        >
+          Get your book within a week! and easily accessible in good shape in
+          the Philippines.
+        </p>
+      </div>
+
+      <!-- nav -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary container-xl">
+        <div class="container-xl">
+          <a href="#" style="width: 130px" class="navbar-brand">
+            <img
+              src="/public/images/logo.png"
+              alt=""
+              style="aspect-ratio: 1 / 1"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 me-auto d-flex gap-md-2 gap-md-4"
+            >
+              <li class="nav-item">
+                <div class="position-relative d-inline-block">
+                  <a
+                    class="nav-link link-animation d-inline-block px-0"
+                    href="#"
+                    >Shop</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="position-relative d-inline-block">
+                  <a
+                    class="nav-link link-animation d-inline-block px-0"
+                    href="#"
+                    >News</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="position-relative d-inline-block">
+                  <a
+                    class="nav-link link-animation d-inline-block px-0"
+                    href="#"
+                    >Contact</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-md-2 gap-md-4">
+              <li class="nav-item">
+                <div class="position-relative d-inline-block">
+                  <a
+                    class="nav-link link-animation d-inline-block px-0"
+                    href="#"
+                    >Cart <i class="bi bi-bag ms-1"></i
+                  ></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="position-relative d-inline-block">
+                  <a
+                    class="nav-link link-animation d-inline-block px-0"
+                    href="#"
+                    >Account <i class="bi bi-person ms-1"></i
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="layout-flex-1 mt-7-5vh">
-      <section aria-label="hero" style="height: 1000px">shop</section>
+    <!-- main -->
+    <main class="layout-flex-1 container-xl">
+      <section style="height: 100rem">
+        <h3 class="my-4 my-md-5 display-5">Books</h3>
+      </section>
     </main>
 
-    <footer>footer</footer>
+    <!-- footer -->
+    <footer class="container-xl">footer</footer>
 
     <!-- bootstrap -->
     <script src="../../css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="../../home.js"></script>
   </body>
 </html>
