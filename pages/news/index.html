@@ -22,14 +22,359 @@
     <!-- vanilla css? goto ./css/page/news.css -->
     <!-- https://icons.getbootstrap.com/ -->
     <!-- all img/video should be format into webp except with the logo itself, upload in the ./public folder -->
+   
   </head>
   <body class="layout-flex">
-    <header>header</header>
-    <main class="layout-flex-1">news</main>
+    <div class="container-fluid g-0">
+    <header
+    class="w-100 position-fixed bg-white d-flex justify-content-center z-40"
+  >
+      <nav
+        class="nav-container d-flex align-items-center justify-content-between p-4 position-sticky z-40 bg-white w-100 h-75vh"
+      >
+        <!-- logo md -->
+        <div class="d-none d-md-block">
+          <a href="#" style="width: 110px" class="d-block">
+            <img
+              src="logo.png"
+              alt=""
+              style="aspect-ratio: 1 / 1"
+              class="mt-2"
+            />
+          </a>
+        </div>
 
-    <footer>footer</footer>
+        <!-- menu md-->
+        <ul class="d-none d-md-flex ms-md-5 gap-5">
+          <li class="position-relative">
+            <a
+              href="./pages/shop/index.html"
+              class="text-decoration-none text-dark link-animation d-block"
+              >Shop</a
+            >
+          </li>
+          <li class="position-relative">
+            <a
+              href="./pages/news/index.html"
+              class="text-decoration-none text-dark link-animation d-block"
+              >News</a
+            >
+          </li>
+          <li class="position-relative">
+            <a
+              href="./pages/contact/index.html"
+              class="text-decoration-none text-dark link-animation d-block"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- menu sm-->
+        <div
+          class="d-md-none cursor-pointer noselect"
+          id="hamburger"
+          onclick="toggleHamburger()"
+        >
+          &#9776;
+        </div>
+
+        <!-- logo sm -->
+        <div class="d-md-none">
+          <a href="#" style="width: 90px" class="d-block">
+            <img
+              src="logo.png"
+              alt=""
+              style="aspect-ratio: 1 / 1"
+            />
+          </a>
+        </div>
+
+        <ul class="d-flex gap-4 gap-md-5">
+          <li class="position-relative">
+            <a
+              href="./pages/cart/index.html"
+              class="text-decoration-none text-dark link-animation d-block"
+              >Cart <i class="bi bi-bag ms-1"></i>
+            </a>
+          </li>
+          <li class="position-relative">
+            <a
+              href="./pages/account/index.html"
+              class="text-decoration-none text-dark link-animation d-block"
+              >Account <i class="bi bi-person ms-1"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <br><br> <br>
+
+
+
+  <div class="container-fluid gx-0">
+        <img src="Angelo.jpeg" class="w-100" alt="">
+  </div>
+
+  <div class="container-fluid ">
+      <div class="row 1 ">
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12 bg-neutral-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-xxl-6 col-md-12 col-sm-12 col-xs-12 bg-light-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12  bg-dark-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="row 2">
+
+        <div class="col-xl-6 col-xxl-6 col-md-12 col-sm-12 col-xs-12 bg-light-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12 bg-neutral-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12  bg-dark-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row 3">
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12 bg-neutral-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12  bg-dark-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-xxl-6 col-md-12 col-sm-12 col-xs-12 bg-light-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="row 4">
+
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12 bg-neutral-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-xxl-6 col-md-12 col-sm-12 col-xs-12 bg-light-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12  bg-dark-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+      
+
+      <div class="row 5">
+
+        <div class="col-xl-6 col-xxl-6 col-md-12 col-sm-12 col-xs-12 bg-light-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12 bg-neutral-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+       
+
+
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12  bg-dark-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row 6">
+        
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12 bg-neutral-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        
+
+        <div class="col-xl-3 col-xxl-3 col-md-12 col-sm-12 col-xs-12  bg-dark-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-xxl-6 col-md-12 col-sm-12 col-xs-12 bg-light-brown">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <div class="title">
+                <h3>Top sales</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe molestiae expedita iure asperiores numquam dignissimos impedit deleniti aliquam. Accusamus quia sequi hic dolores? Aut quis vero adipisci nesciunt dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+  </div>
+
+  
+
+
+    
+    
 
     <!-- bootstrap -->
-    <script src="../../css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/home.js"></script>
   </body>
 </html>
