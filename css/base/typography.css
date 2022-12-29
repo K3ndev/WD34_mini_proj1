@@ -8,3 +8,13 @@ body {
 .font-playfair {
   font-family: "Playfair Display", serif;
 }
+
+.custom-text-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+.custom-text-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}

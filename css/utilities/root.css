@@ -20,7 +20,13 @@
   color: black;
 }
 .text-shadow {
-  color: #666666;
+  color: #808080;
+}
+.text-shadow-white {
+  color: #cfcfcf;
+}
+.text-hover-shadow-white:hover {
+  color: #cfcfcf;
 }
 /* .text-white from bootstrap*/
 
@@ -93,4 +99,23 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.hover-scale-110:hover {
+  transform: scale(1.1);
+}
+
+/* custom border shadow*/
+.custom-border-top {
+  border-top: solid 1px #eae8e73a;
+}
+
+@media (min-width: 768px) {
+  .custom-border-md-top-0 {
+    border-top: solid 0px red !important;
+  }
 }
