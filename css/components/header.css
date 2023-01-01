@@ -15,6 +15,25 @@
 .menu-sm-show {
   transform: translateY(0);
 }
+
+/* for galaxy fold 348px to 280px */
+.custom-galaxyF-display {
+  display: none !important;
+}
+.custom-galaxyF-margin {
+  margin: 8px !important;
+}
+
+/* custom display for galaxy fold display */
+@media (min-width: 349px) {
+  .custom-galaxyF-display {
+    display: block !important;
+  }
+  .custom-galaxyF-margin {
+    margin-bottom: 0px !important;
+  }
+}
+
 /* animation */
 /* animation open */
 @keyframes slideInTopStart {

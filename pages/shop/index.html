@@ -39,7 +39,7 @@
         <div class="container-xl">
           <!-- hamburger -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler custom-galaxyF-margin"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarText"
@@ -50,7 +50,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- logo -->
-          <a href="../../index.html" style="width: 100px" class="navbar-brand">
+          <a
+            href="../../index.html"
+            style="width: 90px"
+            class="navbar-brand me-0 custom-galaxyF-display"
+          >
             <img
               src="../../public/images/logo.png"
               alt=""
@@ -59,28 +63,26 @@
           </a>
 
           <!-- left sm, remove at md breakpoint -->
-          <div>
-            <ul class="navbar-nav mb-2 mb-lg-0 d-flex d-md-none gap-4 flex-row">
-              <li class="nav-item">
-                <div class="position-relative d-inline-block">
-                  <a
-                    class="nav-link link-animation d-inline-block px-0"
-                    href="../cart/index.html"
-                    >Cart <i class="bi bi-bag ms-1"></i
-                  ></a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="position-relative d-inline-block">
-                  <a
-                    class="nav-link link-animation d-inline-block px-0"
-                    href="../account/index.html"
-                    >Account <i class="bi bi-person ms-1"></i
-                  ></a>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ul class="navbar-nav d-flex d-md-none gap-3 flex-row">
+            <li class="nav-item">
+              <div class="position-relative d-inline-block">
+                <a
+                  class="nav-link link-animation d-inline-block px-0"
+                  href="../cart/index.html"
+                  >Cart <i class="bi bi-bag ms-0 ms-sm-1"></i
+                ></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="position-relative d-inline-block">
+                <a
+                  class="nav-link link-animation d-inline-block px-0"
+                  href="../account/index.html"
+                  >Account <i class="bi bi-person ms-0 ms-sm-1"></i
+                ></a>
+              </div>
+            </li>
+          </ul>
 
           <!-- hamburger menu -->
           <div class="collapse navbar-collapse" id="navbarText">
