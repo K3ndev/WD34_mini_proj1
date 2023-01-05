@@ -70,7 +70,7 @@
   background-color: #523a1d;
 
   width: 0%;
-  bottom: -4px;
+  bottom: 3px;
 }
 
 .link-animation:hover::before {
@@ -78,6 +78,21 @@
 }
 
 .link-animation:hover {
+  color: #523a1d !important;
+}
+
+.link-active::before {
+  transition: 300ms;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #523a1d;
+
+  width: 100%;
+  bottom: 3px;
+}
+
+.link-active {
   color: #523a1d !important;
 }
 

@@ -92,7 +92,7 @@
               <li class="nav-item border-top custom-border-md-top-0">
                 <div class="position-relative d-inline-block">
                   <a
-                    class="nav-link link-animation d-inline-block px-0 mt-1 mt-md-0"
+                    class="nav-link d-inline-block px-0 mt-1 mt-md-0 link-active"
                     href="#"
                     >Shop</a
                   >
@@ -154,12 +154,363 @@
       <!-- mobile approach - first you need to make a layout in mobile first then adjust the layout for tablet and laptop [default - md - lg] -->
 
       <!-- remove [height: 30rem] -->
-      <section class="mt-4 mt-md-5" style="height: 30rem">
-        <h3 class="display-5">section 1</h3>
-      </section>
+      <section class="mt-4 mt-md-5">
+        <!-- default, d-lg-none -->
+        <div class="d-flex w-100 justify-content-between d-xl-none">
+          <div class="d-flex gap-1 gap-sm-2 cursor-pointer">
+            <i class="bi bi-sliders"></i>
+            <p>Filter</p>
+          </div>
 
-      <section class="mt-4 mt-md-5" style="height: 30rem">
-        <h3 class="display-5">section 2</h3>
+          <div class="d-flex gap-1 gap-sm-2">
+            <label for="cars" class="d-block">Sort by </label>
+            <select name="sortBy" id="sortBy" class="cursor-pointer">
+              <option value="featured">Featured</option>
+              <option value="best-selling">Best selling</option>
+              <option value="created-ascending">Old to new</option>
+              <option value="created-descending">New to old</option>
+              <option value="price-ascending">Price, lowest first</option>
+              <option value="price-descending">Price, highest first</option>
+              <option value="title-ascending">Product, A-Z</option>
+              <option value="title-descending">Product, Z-A</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- lg -->
+        <div class="container-xl d-lg-flex gap-5">
+          <!-- 1 -->
+          <div
+            class="d-none d-xl-block custom-w-select bg-white-paper px-4 py-5 h-fit-content"
+            style="border: solid 1px #eae8e734; border-radius: 0.5rem"
+          >
+            <!-- search -->
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control text-black"
+                placeholder="Tittle, Genre..."
+                aria-label="Search"
+                aria-describedby="basic-addon1"
+              />
+              <span
+                class="input-group-text bg-white cursor-pointer"
+                id="basic-addon1"
+                ><i class="bi bi-search bg-white"></i
+              ></span>
+            </div>
+
+            <!-- Genre -->
+            <div>
+              <!-- popular Genre -->
+              <div class="pt-5">
+                <h3>Popular Search</h3>
+                <p>Atomic Habits</p>
+                <p>Romance</p>
+                <p>Duke of Sussex</p>
+                <p>Business</p>
+              </div>
+
+              <!-- Genre -->
+              <div class="pt-5">
+                <h3>Genre</h3>
+                <p>Children Fiction</p>
+                <p>Modern Literacy Fiction</p>
+                <p>Classic Literacy Fiction</p>
+                <p>Fantasy Fiction</p>
+                <p>Mystery Fiction</p>
+                <p>Historical Fiction</p>
+                <p>Young Adult Fiction</p>
+                <p>Magic Realism</p>
+              </div>
+
+              <!-- price -->
+              <div class="pt-5">
+                <h3>Price</h3>
+              </div>
+
+              <!-- book format -->
+              <div class="pt-5">
+                <h3>Book Format</h3>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="custom-lg-w-items py-4 px-md-4 py-md-5">
+            <!--  -->
+            <div class="d-none d-xl-flex w-100 justify-content-between">
+              <p>Product: 128 items</p>
+
+              <div class="d-flex gap-1 gap-sm-2">
+                <label for="cars" class="d-block">Sort by </label>
+                <select name="sortBy" id="sortBy" class="cursor-pointer">
+                  <option value="featured">Featured</option>
+                  <option value="best-selling">Best selling</option>
+                  <option value="created-ascending">Old to new</option>
+                  <option value="created-descending">New to old</option>
+                  <option value="price-ascending">Price, lowest first</option>
+                  <option value="price-descending">Price, highest first</option>
+                  <option value="title-ascending">Product, A-Z</option>
+                  <option value="title-descending">Product, Z-A</option>
+                </select>
+              </div>
+            </div>
+
+            <!--  -->
+
+            <div class="pt-5 custom-grid custom-grid-col">
+              <!-- card 1 -->
+              <div class="card p-0 cursor-pointer custom-card">
+                <div class="d-flex flex-column">
+                  <div class="custom-card-img-container">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://m.media-amazon.com/images/I/51-uspgqWIL._SX329_BO1,204,203,200_.jpg"
+                        class="img-fluid rounded-start custom-img-item"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Atomic Habits: An Easy & Proven Way to Build Good Habits
+                        & Break Bad Ones
+                      </h5>
+                      <div class="card-text d-flex justify-content-between">
+                        <small class="text-muted text-center">₱667.95 </small>
+
+                        <div>
+                          <i class="bi bi-bag-plus"></i>
+                          <i class="bi bi-suit-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div class="card p-0 cursor-pointer custom-card">
+                <div class="d-flex flex-column">
+                  <div class="custom-card-img-container">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://m.media-amazon.com/images/I/51-uspgqWIL._SX329_BO1,204,203,200_.jpg"
+                        class="img-fluid rounded-start custom-img-item"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Atomic Habits: An Easy & Proven Way to Build Good Habits
+                        & Break Bad Ones
+                      </h5>
+                      <div class="card-text d-flex justify-content-between">
+                        <small class="text-muted text-center">₱667.95 </small>
+
+                        <div>
+                          <i class="bi bi-bag-plus"></i>
+                          <i class="bi bi-suit-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div class="card p-0 cursor-pointer custom-card">
+                <div class="d-flex flex-column">
+                  <div class="custom-card-img-container">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://m.media-amazon.com/images/I/51-uspgqWIL._SX329_BO1,204,203,200_.jpg"
+                        class="img-fluid rounded-start custom-img-item"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Atomic Habits: An Easy & Proven Way to Build Good Habits
+                        & Break Bad Ones
+                      </h5>
+                      <div class="card-text d-flex justify-content-between">
+                        <small class="text-muted text-center">₱667.95 </small>
+
+                        <div>
+                          <i class="bi bi-bag-plus"></i>
+                          <i class="bi bi-suit-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card p-0 cursor-pointer custom-card">
+                <div class="d-flex flex-column">
+                  <div class="custom-card-img-container">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://m.media-amazon.com/images/I/51-uspgqWIL._SX329_BO1,204,203,200_.jpg"
+                        class="img-fluid rounded-start custom-img-item"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Atomic Habits: An Easy & Proven Way to Build Good Habits
+                        & Break Bad Ones
+                      </h5>
+                      <div class="card-text d-flex justify-content-between">
+                        <small class="text-muted text-center">₱667.95 </small>
+
+                        <div>
+                          <i class="bi bi-bag-plus"></i>
+                          <i class="bi bi-suit-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 5 -->
+              <div class="card p-0 cursor-pointer custom-card">
+                <div class="d-flex flex-column">
+                  <div class="custom-card-img-container">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://m.media-amazon.com/images/I/51-uspgqWIL._SX329_BO1,204,203,200_.jpg"
+                        class="img-fluid rounded-start custom-img-item"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Atomic Habits: An Easy & Proven Way to Build Good Habits
+                        & Break Bad Ones
+                      </h5>
+                      <div class="card-text d-flex justify-content-between">
+                        <small class="text-muted text-center">₱667.95 </small>
+
+                        <div>
+                          <i class="bi bi-bag-plus"></i>
+                          <i class="bi bi-suit-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 6 -->
+              <div class="card p-0 cursor-pointer custom-card">
+                <div class="d-flex flex-column">
+                  <div class="custom-card-img-container">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://m.media-amazon.com/images/I/51-uspgqWIL._SX329_BO1,204,203,200_.jpg"
+                        class="img-fluid rounded-start custom-img-item"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Atomic Habits: An Easy & Proven Way to Build Good Habits
+                        & Break Bad Ones
+                      </h5>
+                      <div class="card-text d-flex justify-content-between">
+                        <small class="text-muted text-center">₱667.95 </small>
+
+                        <div>
+                          <i class="bi bi-bag-plus"></i>
+                          <i class="bi bi-suit-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 7 -->
+              <div class="card p-0 cursor-pointer custom-card">
+                <div class="d-flex flex-column">
+                  <div class="custom-card-img-container">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://m.media-amazon.com/images/I/51-uspgqWIL._SX329_BO1,204,203,200_.jpg"
+                        class="img-fluid rounded-start custom-img-item"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Atomic Habits: An Easy & Proven Way to Build Good Habits
+                        & Break Bad Ones
+                      </h5>
+                      <div class="card-text d-flex justify-content-between">
+                        <small class="text-muted text-center">₱667.95 </small>
+
+                        <div>
+                          <i class="bi bi-bag-plus"></i>
+                          <i class="bi bi-suit-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 8 -->
+              <div class="card p-0 cursor-pointer custom-card">
+                <div class="d-flex flex-column">
+                  <div class="custom-card-img-container">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://m.media-amazon.com/images/I/51-uspgqWIL._SX329_BO1,204,203,200_.jpg"
+                        class="img-fluid rounded-start custom-img-item"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Atomic Habits: An Easy & Proven Way to Build Good Habits
+                        & Break Bad Ones
+                      </h5>
+                      <div class="card-text d-flex justify-content-between">
+                        <small class="text-muted text-center">₱667.95 </small>
+
+                        <div>
+                          <i class="bi bi-bag-plus"></i>
+                          <i class="bi bi-suit-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -312,3 +663,5 @@
     <script src="../../css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
   </body>
 </html>
+
+<!-- todo add a `add to cart` and `add to wishlist` -->

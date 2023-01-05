@@ -21,10 +21,285 @@
     <!-- vanilla css? goto ./css/page/cart.css -->
   </head>
   <body class="layout-flex">
-    <header>header</header>
-    <main class="layout-flex-1">account</main>
+    <!-- nav -->
+    <header class="border-bottom">
+      <!-- announcement -->
+      <div class="bg-black">
+        <p class="text-white text-center py-2 custom-text-sm">
+          Free Shipping for purchases with a minimum of PHP 999 | WE SHIP ONLY
+          IN THE PHILIPPINES
+        </p>
+      </div>
 
-    <footer>footer</footer>
+      <!-- nav -->
+      <nav class="navbar navbar-expand-md bg-body-tertiary container-xl">
+        <div class="container-xl">
+          <!-- hamburger -->
+          <button
+            class="navbar-toggler custom-galaxyF-margin"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- logo -->
+          <a
+            href="../../index.html"
+            style="width: 100px"
+            class="navbar-brand me-0 custom-galaxyF-display"
+          >
+            <img
+              src="../../public/images/logo.png"
+              alt=""
+              style="aspect-ratio: 1 / 1"
+            />
+          </a>
+
+          <!-- left sm, remove at md breakpoint -->
+          <ul class="navbar-nav d-flex d-md-none gap-3 flex-row">
+            <li class="nav-item">
+              <div class="position-relative d-inline-block">
+                <a
+                  class="nav-link link-animation d-inline-block px-0"
+                  href="../cart/index.html"
+                  >Cart <i class="bi bi-bag ms-0 ms-sm-1"></i
+                ></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="position-relative d-inline-block">
+                <a class="nav-link d-inline-block px-0 link-active" href="#"
+                  >Account <i class="bi bi-person ms-0 ms-sm-1"></i
+                ></a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- hamburger menu -->
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul
+              class="navbar-nav mb-md-2 mb-lg-0 me-auto ms-auto d-flex gap-md-4"
+            >
+              <li class="nav-item border-top custom-border-md-top-0">
+                <div class="position-relative d-inline-block">
+                  <a
+                    class="nav-link link-animation d-inline-block px-0 mt-1 mt-md-0"
+                    href="../shop/index.html"
+                    >Shop</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="position-relative d-inline-block">
+                  <a
+                    class="nav-link link-animation d-inline-block px-0"
+                    href="../news/index.html"
+                    >News</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="position-relative d-inline-block">
+                  <a
+                    class="nav-link link-animation d-inline-block px-0"
+                    href="../contact/index.html"
+                    >Contact</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 d-none d-md-flex gap-md-2 gap-md-4"
+            >
+              <li class="nav-item">
+                <div class="position-relative d-inline-block">
+                  <a
+                    class="nav-link link-animation d-inline-block px-0"
+                    href="../cart/index.html"
+                    >Cart <i class="bi bi-bag ms-1"></i
+                  ></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="position-relative d-inline-block">
+                  <a class="nav-link d-inline-block px-0 link-active" href="#"
+                    >Account <i class="bi bi-person ms-1"></i
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="layout-flex-1 container-xl">
+      <!-- code here, use <section> tag, don't use <br> tag instead use [mt-4 mt-md-5] to have spaces between <section> -->
+      <!-- for typography: use [display-1 to 6] to emphasize, and use [fs-1 to 6] for normal paragraph -->
+      <!-- we have our own color, etc, goto ./css/utilities/root.css -->
+
+      <!-- mobile approach - first you need to make a layout in mobile first then adjust the layout for tablet and laptop [default - md - lg] -->
+
+      <!-- remove [height: 30rem] -->
+      <section class="mt-4 mt-md-5" style="height: 30rem">
+        <h3 class="display-5">section 1</h3>
+      </section>
+
+      <section class="mt-4 mt-md-5" style="height: 30rem">
+        <h3 class="display-5">section 2</h3>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-black d-flex flex-column text-white mt-4 mt-md-5">
+      <div
+        class="container-xl py-5 d-flex justify-content-md-evenly flex-column flex-md-row gap-5 custom-text-sm"
+      >
+        <!-- 1 -->
+        <div class="d-flex flex-column gap-2 mx-5 mx-md-0">
+          <h3 class="mb-3 mb-md-1 text-white d-block text-center text-md-start">
+            Quick Links
+          </h3>
+          <div
+            class="d-flex gap-5 gap-md-2 justify-content-between flex-md-column"
+          >
+            <div class="d-flex gap-2 flex-column">
+              <a
+                href="#"
+                class="text-decoration-none text-shadow text-hover-shadow-white text-decoration-underline d-block"
+                >Shop</a
+              >
+              <a
+                href="#"
+                class="text-decoration-none text-shadow text-hover-shadow-white text-decoration-underline d-block"
+                >FAQs</a
+              >
+              <a
+                href="#"
+                class="text-decoration-none text-shadow text-hover-shadow-white text-decoration-underline d-block"
+                >Privacy Policy</a
+              >
+            </div>
+            <div class="d-flex gap-2 flex-column">
+              <a
+                href="#"
+                class="text-decoration-none text-shadow text-hover-shadow-white text-decoration-underline d-block"
+                >Return and exchange
+              </a>
+              <a
+                href="#"
+                class="text-decoration-none text-shadow text-hover-shadow-white text-decoration-underline d-block"
+                >Terms of Service
+              </a>
+              <a
+                href="#"
+                class="text-decoration-none text-shadow text-hover-shadow-white text-decoration-underline d-block"
+                >Refund policy
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div
+          class="d-flex flex-column flex-md-column gap-5 gap-md-2 justify-content-between mx-5 mx-md-0"
+        >
+          <!-- 1 -->
+          <div class="d-flex gap-2 flex-column">
+            <h3 class="mb-1 text-white text-center text-md-start">
+              You can pay through:
+            </h3>
+            <div class="d-flex flex-column gap-2">
+              <div
+                class="d-flex gap-2 justify-content-center justify-content-md-start"
+              >
+                <div href="#" style="width: 50px" class="navbar-brand">
+                  <img
+                    src="../../public/images/payment/maya-footer.png"
+                    alt=""
+                    style="aspect-ratio: 16 / 9"
+                  />
+                </div>
+                <div href="#" style="width: 50px" class="navbar-brand">
+                  <img
+                    src="../../public/images/payment/partner-dragonpay.gif"
+                    alt=""
+                    style="aspect-ratio: 16 / 9"
+                  />
+                </div>
+                <div href="#" style="width: 50px" class="navbar-brand">
+                  <img
+                    src="../../public/images/payment/partner-gcash.gif"
+                    alt=""
+                    style="aspect-ratio: 16 / 9"
+                  />
+                </div>
+              </div>
+              <div
+                class="d-flex gap-2 justify-content-center justify-content-md-start"
+              >
+                <div href="#" style="width: 50px" class="navbar-brand">
+                  <img
+                    src="../../public/images/payment/payment-cod.gif"
+                    alt=""
+                    style="aspect-ratio: 16 / 9"
+                  />
+                </div>
+                <div href="#" style="width: 50px" class="navbar-brand">
+                  <img
+                    src="../../public/images/payment/payment-mastercard.gif"
+                    alt=""
+                    style="aspect-ratio: 16 / 9"
+                  />
+                </div>
+                <div href="#" style="width: 50px" class="navbar-brand">
+                  <img
+                    src="../../public/images/payment/payment-visa.gif"
+                    alt=""
+                    style="aspect-ratio: 16 / 9"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="d-flex gap-2 flex-column">
+            <h3 class="mb-1 text-white text-center text-md-start">
+              Connect with Us:
+            </h3>
+            <div
+              class="d-flex gap-3 justify-content-center justify-content-md-start"
+            >
+              <a href="#" class="no-select text-white hover-scale-110">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="no-select text-white hover-scale-110">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" class="no-select text-white hover-scale-110">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="no-select text-white hover-scale-110">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center px-4 py-5 custom-border-top custom-text-xs">
+        <div class="xontainer-xl">
+          <p>Copyright &copy; 2022 All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- bootstrap -->
     <script src="../../css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
