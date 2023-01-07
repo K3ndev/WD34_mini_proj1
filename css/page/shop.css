@@ -69,3 +69,27 @@
 .custom-card:hover .card-title {
   text-decoration: underline;
 }
+
+/* custom-navigation */
+.custom-navigation {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.custom-navigation-btn:hover {
+  background-color: #523a1d;
+  color: white;
+}
+
+/* display galaxy fold */
+.custom-display-result {
+  display: none;
+}
+@media (min-width: 390px) {
+  .custom-display-result {
+    display: block;
+  }
+  .custom-gap-result {
+    gap: 0.25rem !important;
+  }
+}
